@@ -1,5 +1,5 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 # Create your views here.
-def index(request):
-    return HttpResponse('test paheggege')
+def post_list(request):
+    return render(request, 'polls/post_list.html', {})
